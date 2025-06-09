@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Wibu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Portofolio Wibu [Nama Kamu]</h1>
+    <p>Anime, Donghua, Komik Favorit & Komunitas</p>
+  </header>
+
+<div class="tabs">
+  <button class="tab active" onclick="showTab('anime')">Anime Favorit</button>
+  <button class="tab" onclick="showTab('donghua')">Donghua Favorit</button>
+  <button class="tab" onclick="showTab('komik')">Komik Favorit</button>
+  <button class="tab" onclick="showTab('komunitas')">Komunitas</button>
+</div>
+
+<!-- Anime -->
+<div class="tab-content" id="anime">
+  <div class="grid">
+    <div class="card">
+      <img src="https://i.imgur.com/l5dRZ9H.jpg" alt="AOT">
+      <p>Attack on Titan</p>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/Z1Dd7E7.jpg" alt="JJK">
+      <p>Jujutsu Kaisen</p>
+    </div>
+  </div>
+</div>
+
+<!-- Donghua -->
+<div class="tab-content hidden" id="donghua">
+  <div class="grid">
+    <div class="card">
+      <img src="https://i.imgur.com/dYc7yJ0.jpg" alt="Heaven Guards">
+      <p>Heaven Guards</p>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/ECpYwDl.jpg" alt="Fights Breaking">
+      <p>Fights Breaking...</p>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/2E3Jxgt.jpg" alt="Xian Ni">
+      <p>Xian Ni</p>
+    </div>
+  </div>
+</div>
+
+<!-- Komik -->
+<div class="tab-content hidden" id="komik">
+  <div class="grid">
+    <div class="card">
+      <img src="https://i.imgur.com/WD1RXMa.jpg" alt="Star Ginseng">
+      <p>Star Ginseng Store</p>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/jpKaP91.jpg" alt="Player Return">
+      <p>Player Who Returned...</p>
+    </div>
+  </div>
+</div>
+
+<!-- Komunitas -->
+<div class="tab-content hidden" id="komunitas">
+  <p>Gabung ke komunitas Wibu: <br>
+    <a href="https://discord.gg/komikrealm" target="_blank">Discord Komikrealm</a>
+  </p>
+</div>
+
+
+  <section>
+    <h2>💬 Forum Chat Wibu</h2>
+    <div id="chat-box" class="chat-box"></div>
+    <input type="text" id="nama" placeholder="Nama" />
+    <input type="text" id="pesan" placeholder="Pesan" />
+    <button onclick="kirimPesan()">Kirim</button>
+  </section>
+
+  <footer>
+    <p>© [Tahun] [Nama Kamu] | Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
