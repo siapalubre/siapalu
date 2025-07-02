@@ -1,4 +1,3 @@
-
 module.exports = [
   { nama: '🐟 Ikan Kecil', hadiah: 50, rarity: 'umum' },
   { nama: '🐠 Ikan Hias', hadiah: 100, rarity: 'umum' },
